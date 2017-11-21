@@ -1,0 +1,21 @@
+server:
+  address:  localhost
+  port: 8000
+spring:
+  profiles:
+    active: production
+    include:
+      - user
+---
+spring:
+  profiles: development
+server:
+  address:  127.0.0.1
+  port: 8081
+---
+spring:
+  profiles: production
+server:
+  address:  192.168.10.90
+  port: 9000
+name: wusongsong
